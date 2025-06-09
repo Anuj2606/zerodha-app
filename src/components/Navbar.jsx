@@ -1,13 +1,16 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
+import Hamburger from './Hamburger';
 
 const Navbar = () => {
+
   return (
-    <nav className="bg-white shadow p-4">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
+    <nav className="sticky top-0 z-50 bg-white shadow">
+      <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         <div className="text-xl font-bold text-blue-600">Zerodha</div>
-        
-        <div className="space-x-4 text-sm text-gray-700">
+
+        <Hamburger />
+        <div className="hidden md:flex space-x-6 text-sm text-gray-700">
+          <Link to="/" className="hover:text-blue-600">Home</Link>
           <Link to="/signup" className="hover:text-blue-600">Signup</Link>
           <Link to="/about" className="hover:text-blue-600">About</Link>
           <Link to="/products" className="hover:text-blue-600">Products</Link>
