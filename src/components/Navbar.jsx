@@ -1,12 +1,16 @@
 import { Link } from 'react-router-dom';
 import Hamburger from './Hamburger';
+import logo from '../logo.svg';
 
 const Navbar = () => {
 
   return (
     <nav className="sticky top-0 z-50 bg-white shadow row between">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-        <div className="text-xl font-bold text-blue-600">Zerodha</div>
+        <div className="text-xl font-bold text-blue-600"><img
+            src={logo}
+            className="h-8 w-auto"
+          /></div>
 
         <Hamburger />
         <div className="hidden md:flex space-x-6 text-sm text-gray-700">

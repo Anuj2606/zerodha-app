@@ -7,8 +7,8 @@ export default function Hamburger() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <div className="md:hidden relative">
-      <button onClick={toggleMenu} className="focus:outline-none cursor-pointer hover:blue-600 ">
+    <div className="md:hidden">
+      <button onClick={toggleMenu} className="cursor-pointer hover:blue-600 ">
         <svg
           className="w-6 h-6 text-gray-700"
           fill="none"
